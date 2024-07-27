@@ -1,12 +1,15 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Signup from "./pages/Signup";
 function App() {
- 
-
   return (
-    <div className="bg-red-700">
-      hyyy
-    </div>
-  )
+    <>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/signup" element={<Signup/>} />
+      </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
